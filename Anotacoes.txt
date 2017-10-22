@@ -1,0 +1,34 @@
+***** CURSO MACHINE LEARNING *****
+==================================
+
+WI-FI
+Cetax-Educacao
+senha: cet@xeduc09123
+
+(*)Hugo Padovani
+
+
+- Divisão de dados de treino e teste, normalmente usar 80/20 = 80% Treino e 20% Testes.
+
+
+(*)Principais Tópicos ML:
+————————————————————————————————————
+1-) Aprendizado Supervisionado (Onde voce sabe o valor final da sua variável alvo)
+-Regressão
+	- Linear Regression
+	- Multiple Linear Regression
+	- Polynomial Regression
+	- Decision Tree
+	- Random Forest (melhor)
+
+-Classificação
+	- Logistic Regression
+	- KNN (K-Nearest Neighbors)
+	- SVM (Support Vector Machine)
+	
+
+2-) Aprendizado Não-Supervisionado
+-Agrupamento (Clustering)
+
+
+

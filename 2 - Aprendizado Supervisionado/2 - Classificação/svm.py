@@ -22,15 +22,16 @@ X_test = sc.transform(X_test)
 
 # Criando o modelo
 from sklearn.svm import SVC
-classifier = SVC(kernel = 'rbf', random_state = 0)
+classifier = SVC(kernel='linear', random_state = 0)
 classifier.fit(X_train, y_train)
 
 # Prevendo os resultados
 y_pred = classifier.predict(X_test)
 
 # Criando a matriz de confusão
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix, accuracy_score
 cm = confusion_matrix(y_test, y_pred)
+acc = accuracy_score(y_test, y_pred)
 
 # Visualizando os resultados com fronteiras (Conjunto de treino)
 from matplotlib.colors import ListedColormap

@@ -32,6 +32,8 @@ regressor.fit(X_train, y_train)
 # Predizendo os resultados no test set
 y_pred = regressor.predict(X_test)
 
+
+
 # Backward Elimination para o modelo ótimo
 
 # Passo 1 - Selecionando o Significance Level de 0.05
@@ -57,3 +59,4 @@ regressor_OLS.summary() # Gera uma tabela no console, procurar valores P
 X_opt = X[:, [0, 3]] # Passo 4 - Removendo o preditor
 regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit() # Passo 5 - Treinando o novo modelo
 regressor_OLS.summary() # Gera uma tabela no console, procurar valores P
+
