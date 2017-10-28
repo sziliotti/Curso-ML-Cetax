@@ -33,6 +33,7 @@ senha: cet@xeduc09123
 -Redes Neurais
 	- Artificial Neural Network
 	- Redes Neurais Convolucionais
+
 	
 
 2-) Aprendizado Não-Supervisionado (Não existe os rótulos atrelados, devemos descobrir os padrões)

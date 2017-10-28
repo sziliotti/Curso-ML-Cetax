@@ -71,6 +71,6 @@ test_set = test_datagen.flow_from_directory('dataset/test_set',
 # Treinando a rede
 classifier.fit_generator(training_set,
                          steps_per_epoch=8000/32, # samples_per_epoch/batch_size
-                         epochs=1,
+                         epochs=10,
                          validation_data=test_set,
                          validation_steps=2000/32)

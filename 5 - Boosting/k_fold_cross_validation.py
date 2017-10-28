@@ -33,10 +33,13 @@ from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
 
 # Applying k-Fold Cross Validation
-from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import cross_val_score, cross_val_predict
 accuracies = cross_val_score(estimator = classifier, X = X_train, y = y_train, cv = 10)
-accuracies.mean()
-accuracies.std()
+acc_mean = accuracies.mean()
+acc_std = accuracies.std()
+
+y_pred_cv = cross_val_predict(estimator = classifier, X = X_train, y = y_train, cv = 10)
+cm_cv = confusion_matrix(y_train, y_pred_cv)
 
 # Visualising the Training set results
 from matplotlib.colors import ListedColormap
