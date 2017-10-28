@@ -75,6 +75,7 @@ y_pred = classifier.predict(X_test) # Retorna probabilidades
 y_pred = (y_pred > 0.5) # Retorna 1 para maior que 0,5 e 0 caso contrário
 
 # Criando a matriz de confusão
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix, accuracy_score
 cm = confusion_matrix(y_test, y_pred)
+acc = accuracy_score(y_test, y_pred)
 

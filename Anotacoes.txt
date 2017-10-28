@@ -30,6 +30,11 @@ senha: cet@xeduc09123
 	- Decision Tree Classifier
 	- Random Forest Classifier
 
+-Redes Neurais
+	- Artificial Neural Network
+	- Redes Neurais Convolucionais
+	
+
 2-) Aprendizado Não-Supervisionado (Não existe os rótulos atrelados, devemos descobrir os padrões)
 -Agrupamento (Clustering)
 	- K-means
@@ -37,7 +42,9 @@ senha: cet@xeduc09123
 
 -Redução de Dimensionalidade
 	- PCA (Principal Component Analysis)
-	- 
+	- Kernel PCA
+	- LDA (Linear Discriminant Analysis)
+
 
 
 (*)ANOTAÇOES 
