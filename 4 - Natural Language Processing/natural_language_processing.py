@@ -45,3 +45,5 @@ y_pred = classifier.predict(X_test)
 # Criando a matriz de confusão
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
+
+(55+91)/(55+91+12+42)
