@@ -22,7 +22,7 @@ X_test = sc.transform(X_test)
 
 # Criando o modelo
 from sklearn.ensemble import RandomForestClassifier
-classifier = RandomForestClassifier(n_estimators = 10, criterion = 'entropy', random_state = 0)
+classifier = RandomForestClassifier(n_estimators = 500, criterion = 'entropy', random_state = 0, verbose = 2)
 classifier.fit(X_train, y_train)
 
 # Prevendo os resultados

@@ -17,6 +17,7 @@ for i in range(1,11):
     # k-means++ evita armadilha de inicialização errada
     kmeans.fit(X)
     wcss.append(kmeans.inertia_) # calcula o wcss
+
 plt.plot(range(1, 11), wcss)
 plt.title('The Elbow Method')
 plt.xlabel('Number of clusters')

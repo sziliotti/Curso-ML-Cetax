@@ -7,8 +7,8 @@ import pandas as pd
 
 # Importando o dataset
 dataset = pd.read_csv('Social_Network_Ads.csv')
-X = dataset.iloc[:, [2, 3]].values
-y = dataset.iloc[:, 4].values
+X = dataset.iloc[:, [2, 3]].values #Variaveis independentes
+y = dataset.iloc[:, 4].values   #Variavel Alvo
 
 # Dividindo em treino e teste
 from sklearn.cross_validation import train_test_split
@@ -32,6 +32,12 @@ y_pred = classifier.predict(X_test)
 from sklearn.metrics import confusion_matrix, accuracy_score
 cm = confusion_matrix(y_test, y_pred)
 acc = accuracy_score(y_test, y_pred)
+
+y_pred_train = classifier.predict(X_train)
+cm_tran = confusion_matrix(y_train, y_pred_train)
+acc_train = accuracy_score(y_train, y_pred_train)
+
+
 
 # Visualizando os resultados com fronteiras (Conjunto de treino)
 from matplotlib.colors import ListedColormap

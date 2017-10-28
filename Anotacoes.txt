@@ -13,7 +13,7 @@ senha: cet@xeduc09123
 
 (*)Principais Tópicos ML:
 ————————————————————————————————————
-1-) Aprendizado Supervisionado (Onde voce sabe o valor final da sua variável alvo)
+1-) Aprendizado Supervisionado (Onde voce sabe o valor final da sua variável alvo(y))
 -Regressão
 	- Linear Regression
 	- Multiple Linear Regression
@@ -25,10 +25,24 @@ senha: cet@xeduc09123
 	- Logistic Regression
 	- KNN (K-Nearest Neighbors)
 	- SVM (Support Vector Machine)
-	
+	- Kernel SVM
+	- Naive Bayes (Probabilidade)
+	- Decision Tree Classifier
+	- Random Forest Classifier
 
-2-) Aprendizado Não-Supervisionado
+2-) Aprendizado Não-Supervisionado (Não existe os rótulos atrelados, devemos descobrir os padrões)
 -Agrupamento (Clustering)
+	- K-means
+	- Hierarchical Cluster
+
+-Redução de Dimensionalidade
+	- PCA (Principal Component Analysis)
+	- 
+
+
+(*)ANOTAÇOES 
+------------------------------------------
+- Aplicar Feature Scaling(Normalização) quando as variáveis estão em escalas diferentes. Tipo "Idade"(20 anos) e "Salário"(20.000) a escala é diferente entre eles. Ele deixa todos valores na mesma escala.
 
 
 

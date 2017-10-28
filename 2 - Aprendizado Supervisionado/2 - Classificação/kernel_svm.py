@@ -17,8 +17,8 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, rand
 # Feature Scaling
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
-X_train = sc.fit_transform(X_train)
-X_test = sc.transform(X_test)
+X_train = sc.fit_transform(X_train)   #Ele treina antes e aplica a transformacao no modelo
+X_test = sc.transform(X_test)   #nao é necessrio treinar, pois foi executado anteriormente pois os dados são similares
 
 # Criando o modelo
 from sklearn.svm import SVC
